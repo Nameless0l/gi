@@ -64,7 +64,7 @@ export default function Footer({ pages }) {
                                 color="primary"
                                 aria-label="Twitter"
                                 component="a"
-                                href="https://twitter.com/clubgenieinfo"
+                                href="https://x.com/club_info_enspy?s=21&t=mI68y1rpUqACQBljQNnORg"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -76,7 +76,7 @@ export default function Footer({ pages }) {
                                 color="primary"
                                 aria-label="Instagram"
                                 component="a"
-                                href="https://www.instagram.com/club_info_enspy?igsh=MWU1MXdhNDQxa3NjMQ=="
+                                href="https://www.instagram.com/club_info_enspy?igsh=MWU1MXdhNDQxa3NjMQ%3D%3D&utm_source=qr"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -88,7 +88,7 @@ export default function Footer({ pages }) {
                                 color="primary"
                                 aria-label="LinkedIn"
                                 component="a"
-                                href="https://www.linkedin.com/in/club-gi-enspy-1a919b29b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                href="https://www.linkedin.com/in/club-gi-enspy-1a919b29b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

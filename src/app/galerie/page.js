@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { Container, Typography, Box, Grid, Card, CardMedia, CardContent, CardActions, Button, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
-import Image from 'next/image';
+
 // Ceci est un exemple de données. Dans une application réelle, ces données proviendraient d'une API ou d'une base de données.
 const galleryItems = [
     { id: 1, title: "Mariage de Grand-père et Grand-mère", image: "/images/wedding.jpg", description: "La cérémonie traditionnelle qui a uni nos grands-parents en 1950." },
@@ -63,7 +63,7 @@ const GalleryPage = () => {
                     <>
                         <DialogTitle>{selectedItem.title}</DialogTitle>
                         <DialogContent>
-                            <Image src={selectedItem.image} alt={selectedItem.title} style={{ width: '100%', marginBottom: '1rem' }} />
+                            <img src={selectedItem.image} alt={selectedItem.title} style={{ width: '100%', marginBottom: '1rem' }} />
                             <Typography variant="body1">{selectedItem.description}</Typography>
                         </DialogContent>
                         <DialogActions>

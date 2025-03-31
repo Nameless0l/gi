@@ -80,7 +80,7 @@ const HeroSection = () => {
                             display: 'block'
                         }}
                     >
-                        École Nationale Supérieure Polytechnique
+                        École Nationale Supérieure Polytechnique De Yaounde
                     </Typography>
 
                     <Typography

@@ -29,10 +29,18 @@ const aboutData = {
     }
   ],
   team: [
-    { name: 'John Doe', role: 'Président', image: '/path-to-image-1.jpg' },
-    { name: 'Jane Smith', role: 'Vice-présidente', image: '/path-to-image-2.jpg' },
-    { name: 'Alice Brown', role: 'Secrétaire générale', image: '/path-to-image-3.jpg' },
-    { name: 'Bob White', role: 'Responsable des projets', image: '/path-to-image-4.jpg' },
+    { name: 'NOMO GABRIEL', role: 'Président', image: '/NomoGabriel.jpeg' },
+    { name: 'NZIKO TALLA FÉLIX ', role: 'Vice-présidente', image: '/NzikoTalla.jpeg' },
+    { name: 'Abada Georges', role: 'Secrétaire générale', image: '/GeorgeAbada.jpeg' },
+    { name: 'MBASSI LOIC', role: 'Co-Chef Cellule Projet', image: '/LoicMbassi.jpeg' },
+    { name: 'KOUASSI DE YOBO', role: 'Co-Chef Cellule Projet', image: '/KouassiBryan.jpeg' },
+    { name: 'Tsafack Fotso savio', role: 'Adjoint des projets', image: '/TsafackFotso.jpeg' },
+    { name: 'MAFFO NATACHA', role: 'Chef Cellule Communication', image: '/NatachaMaffo.jpeg' },
+    { name: 'ELA Frédéric Théophile', role: 'Adjoint Communication', image: '/ElaFoeTheophile.jpeg' },
+    { name: 'KOMGUEM ISIS HELCIAS', role: 'Chef relations extérieures', image: '/Isis.jpg' },
+    { name: 'Danwe Manuella', role: 'Adjoint relations extérieures', image: '/ManuellaDanwe.jpeg' },
+    { name: 'NGOUPAYE DJIO THIERRY', role: 'Chef Cellule financiere', image: '/NgoupayeThierry.jpeg' },
+    { name: 'Tsamo Florette Miroslava', role: 'SG cellule projet', image: '/TsamoFlorette.jpeg' },
   ],
 };
 
