@@ -1,4 +1,3 @@
-// src/app/layout.js
 'use client';
 import { useState, useMemo, useEffect } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
@@ -31,17 +30,7 @@ export default function RootLayout({ children }) {
     
     if (savedMode) {
       setMode(savedMode);
-    } 
-    
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = (e) => {
-      if (!localStorage.getItem('theme-mode')) {
-        setMode(e.matches ? 'dark' : 'light');
-      }
-    };
-    
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
+    }
   }, []);
 
   const toggleDarkMode = () => {
@@ -64,6 +53,7 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Club GI ENSPY" />
         <meta name="robots" content="index, follow" />
         
+        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Club GI ENSPY - L'excellence en informatique à Polytechnique Yaoundé" />
         <meta property="og:description" content="Découvrez les projets innovants, formations et événements du Club de Génie Informatique de l'École Nationale Supérieure Polytechnique de Yaoundé." />
@@ -72,10 +62,11 @@ export default function RootLayout({ children }) {
         <meta property="og:site_name" content="Club GI ENSPY" />
         <meta property="og:locale" content="fr_FR" />
         
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Club GI ENSPY - L'excellence en informatique à Polytechnique Yaoundé" />
         <meta name="twitter:description" content="Découvrez les projets innovants, formations et événements du Club de Génie Informatique de l'École Nationale Supérieure Polytechnique de Yaoundé." />
-        <meta name="twitter:image" content="/images/club-gi-cover.jpg" />
+        <meta name="twitter:image" content="/hero.jpg" />
         
         {/* Responsive design */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
