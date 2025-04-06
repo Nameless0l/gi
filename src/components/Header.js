@@ -69,11 +69,6 @@ const navItems = [
     ]
   },
   {
-    title: 'Événements',
-    path: '/events',
-    featured: false
-  },
-  {
     title: 'Notre Hackathon',
     path: '/hackathon',
     featured: true // Élément mis en avant
