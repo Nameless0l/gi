@@ -460,7 +460,7 @@ export default function HackathonPage() {
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                     <People sx={{ color: 'rgba(255, 255, 255, 0.8)' }} />
                     <Typography variant="body2" sx={{ color: 'rgba(255, 255, 255, 0.8)' }}>
-                      150+ participants
+                      45+ participants
                     </Typography>
                   </Box>
                   
@@ -482,7 +482,7 @@ export default function HackathonPage() {
               >
                 <Box
                   component="img"
-                  src="/images/events/hackathon-illustration.png"
+                  src="/hackverse.jpg"
                   alt="Hackathon IA illustration"
                   sx={{
                     width: '100%',
