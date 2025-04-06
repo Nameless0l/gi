@@ -120,7 +120,7 @@ const achievements = [
   },
   {
     year: "2021",
-    title: "Organisation du premier hackathon IA à l'ENSPY",
+    title: "Organisation du premier Hackverseà l'ENSPY",
     description: "Événement ayant réuni plus de 100 participants pendant 24 heures."
   },
   {

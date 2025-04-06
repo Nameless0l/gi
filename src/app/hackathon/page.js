@@ -365,7 +365,7 @@ export default function HackathonPage() {
                     lineHeight: 1.1
                   }}
                 >
-                  Hackathon IA 
+                  Hackverse
                   <Typography
                     component="span"
                     variant="h1"
@@ -483,7 +483,7 @@ export default function HackathonPage() {
                 <Box
                   component="img"
                   src="/hackverse.jpg"
-                  alt="Hackathon IA illustration"
+                  alt="Hackverseillustration"
                   sx={{
                     width: '100%',
                     maxWidth: 500,
@@ -586,11 +586,11 @@ export default function HackathonPage() {
                 component="h2"
                 sx={{ fontWeight: 700, mb: 3 }}
               >
-                Le plus grand hackathon d'IA au Cameroun
+                Un Hackathon qui mets au defis les etudiants
               </Typography>
               
               <Typography variant="body1" paragraph sx={{ color: 'text.secondary', mb: 3 }}>
-                Le Hackathon IA 2025 est un événement intensif de 24 heures où les participants,
+                Le Hackverse 2025 est un événement intensif de 24 heures où les participants,
                 organisés en équipes, relèveront des défis technologiques concrets en développant
                 des solutions innovantes basées sur l'intelligence artificielle.
               </Typography>
@@ -663,7 +663,7 @@ export default function HackathonPage() {
                 color: 'text.secondary'
               }}
             >
-              Au-delà des prix à gagner, le Hackathon IA 2025 est une opportunité unique
+              Au-delà des prix à gagner, le Hackverse 2025 est une opportunité unique
               de développer vos compétences, d'élargir votre réseau et de contribuer
               à l'innovation technologique au Cameroun.
             </Typography>
@@ -1253,7 +1253,7 @@ export default function HackathonPage() {
                 color: 'text.secondary'
               }}
             >
-              Le Hackathon IA 2025 est rendu possible grâce au soutien de nos partenaires.
+              Le Hackverse 2025 est rendu possible grâce au soutien de nos partenaires.
             </Typography>
           </Box>
 
@@ -1533,7 +1533,7 @@ export default function HackathonPage() {
                 mb: 4
               }}
             >
-              Retrouvez les réponses aux questions les plus fréquemment posées sur le Hackathon IA 2025.
+              Retrouvez les réponses aux questions les plus fréquemment posées sur le Hackverse 2025.
             </Typography>
           </Box>
 
@@ -1610,7 +1610,7 @@ export default function HackathonPage() {
                 color: 'text.secondary'
               }}
             >
-              Complétez le formulaire ci-dessous pour réserver votre place au Hackathon IA 2025.
+              Complétez le formulaire ci-dessous pour réserver votre place au Hackverse 2025.
               Les places sont limitées !
             </Typography>
           </Box>
