@@ -8,12 +8,10 @@ import Head from "next/head";
 import Header from '@/components/Header';
 import Footer from "@/components/Footer";
 
-// Importation de polices de caractères
 import { Inter } from 'next/font/google';
 import NextTopLoader from "nextjs-toploader";
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Configuration de la police Inter
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -21,28 +19,20 @@ const inter = Inter({
 });
 
 export default function RootLayout({ children }) {
-  // Gestion du mode clair/sombre
   const [mode, setMode] = useState('light');
   const [mounted, setMounted] = useState(false);
 
-  // Créer le thème en fonction du mode
   const theme = useMemo(() => createCustomTheme(mode), [mode]);
 
-  // Vérifier les préférences du système et les préférences sauvegardées
   useEffect(() => {
     setMounted(true);
     
-    // Vérifier s'il y a une préférence sauvegardée
     const savedMode = localStorage.getItem('theme-mode');
     
     if (savedMode) {
       setMode(savedMode);
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      // Sinon, utiliser les préférences du système
-      setMode('dark');
-    }
+    } 
     
-    // Ajouter un listener pour les changements de préférences système
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = (e) => {
       if (!localStorage.getItem('theme-mode')) {
@@ -54,14 +44,12 @@ export default function RootLayout({ children }) {
     return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
 
-  // Fonction pour basculer entre les modes clair et sombre
   const toggleDarkMode = () => {
     const newMode = mode === 'light' ? 'dark' : 'light';
     setMode(newMode);
     localStorage.setItem('theme-mode', newMode);
   };
 
-  // Attend que le composant soit monté pour éviter les problèmes d'hydratation
   if (!mounted) {
     return null;
   }
@@ -76,7 +64,6 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Club GI ENSPY" />
         <meta name="robots" content="index, follow" />
         
-        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Club GI ENSPY - L'excellence en informatique à Polytechnique Yaoundé" />
         <meta property="og:description" content="Découvrez les projets innovants, formations et événements du Club de Génie Informatique de l'École Nationale Supérieure Polytechnique de Yaoundé." />
@@ -85,7 +72,6 @@ export default function RootLayout({ children }) {
         <meta property="og:site_name" content="Club GI ENSPY" />
         <meta property="og:locale" content="fr_FR" />
         
-        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Club GI ENSPY - L'excellence en informatique à Polytechnique Yaoundé" />
         <meta name="twitter:description" content="Découvrez les projets innovants, formations et événements du Club de Génie Informatique de l'École Nationale Supérieure Polytechnique de Yaoundé." />
