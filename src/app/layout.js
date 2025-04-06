@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Club GI ENSPY - L'excellence en informatique à Polytechnique Yaoundé" />
         <meta property="og:description" content="Découvrez les projets innovants, formations et événements du Club de Génie Informatique de l'École Nationale Supérieure Polytechnique de Yaoundé." />
-        <meta property="og:image" content="/images/club-gi-cover.jpg" />
+        <meta property="og:image" content="/hero.jpg" />
         <meta property="og:url" content="https://www.gi-enspy.com" />
         <meta property="og:site_name" content="Club GI ENSPY" />
         <meta property="og:locale" content="fr_FR" />
