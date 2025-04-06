@@ -78,34 +78,34 @@ const tutorialsData = [
     id: 1,
     title: "Introduction à Python pour débutants",
     description: "Un guide complet pour les débutants qui souhaitent apprendre Python, couvrant les bases de la syntaxe et les concepts fondamentaux.",
-    image: "/images/resources/python-tutorial.jpg",
+    image: "/formation/python.jpg",
     category: "Programmation",
     level: "Débutant",
-    author: "Gabriel Nomo",
+    author: "Pio",
     date: "15 janvier 2024",
     type: "Tutoriel",
-    link: "/resources/tutorials/python-intro"
+    link: "#"
   },
   {
     id: 2,
     title: "Web moderne avec React & Node.js",
     description: "Apprenez à créer des applications web modernes avec React en frontend et Node.js en backend.",
-    image: "/images/resources/react-node-tutorial.jpg",
+    image: "/formation/react.jpg",
     category: "Développement Web",
     level: "Intermédiaire",
-    author: "Félix Nziko",
+    author: "Thierry Ngoupaye",
     date: "5 mars 2024",
     type: "Tutoriel",
-    link: "/resources/tutorials/react-node"
+    link: "#"
   },
   {
     id: 3,
-    title: "Intelligence Artificielle pour la vision par ordinateur",
-    description: "Introduction aux techniques de vision par ordinateur avec TensorFlow et OpenCV.",
-    image: "/images/resources/computer-vision.jpg",
-    category: "IA & Machine Learning",
+    title: "Java",
+    description: "Introduction a la POO et aux concepts avancés de Java, y compris la gestion de la mémoire et les collections.",
+    image: "/formation/java.jpg",
+    category: "java & APP",
     level: "Avancé",
-    author: "Thierry Ngoupaye",
+    author: "Fomekong",
     date: "20 avril 2024",
     type: "Tutoriel",
     link: "/resources/tutorials/computer-vision"
@@ -114,13 +114,13 @@ const tutorialsData = [
     id: 4,
     title: "Docker pour les applications web",
     description: "Apprenez à conteneuriser vos applications web et à les déployer facilement sur différentes plateformes.",
-    image: "/images/resources/docker-tutorial.jpg",
+    image: "formation/docker.jpg",
     category: "DevOps",
     level: "Intermédiaire",
     author: "Loïc Mbassi",
     date: "10 février 2024",
     type: "Tutoriel",
-    link: "/resources/tutorials/docker-web"
+    link: "#"
   }
 ];
 
@@ -129,7 +129,7 @@ const libraryData = [
     id: 1,
     title: "Introduction à la programmation avec Python",
     description: "Un livre complet pour les débutants qui couvre tous les aspects de base de la programmation avec Python.",
-    image: "/images/resources/python-book.jpg",
+    image: "/formation/python.jpg",
     category: "Programmation",
     author: "Dr. Jean Kamga",
     year: "2023",
@@ -142,7 +142,7 @@ const libraryData = [
     id: 2,
     title: "Algorithmes et structures de données",
     description: "Un recueil d'algorithmes et de structures de données essentiels pour tout informaticien.",
-    image: "/images/resources/algorithms-book.jpg",
+    image: "/formation/algorithms-book.jpg",
     category: "Algorithmes",
     author: "Prof. Marie Tchuente",
     year: "2022",
@@ -155,20 +155,20 @@ const libraryData = [
     id: 3,
     title: "Slides du cours de Bases de Données",
     description: "Les diapositives complètes du cours de Bases de Données relationnelles enseigné à l'ENSPY.",
-    image: "/images/resources/database-slides.jpg",
+    image: "/formation/bd.jpg",
     category: "Bases de Données",
-    author: "Dr. Samuel Mbarga",
+    author: "Nameless",
     year: "2024",
     type: "Slides",
     format: "PDF",
     size: "8.7 MB",
-    link: "/resources/library/database-slides"
+    link: "#"
   },
   {
     id: 4,
     title: "Cours de Réseaux Informatiques",
     description: "Support de cours complet sur les réseaux informatiques, les protocoles et leur mise en œuvre.",
-    image: "/images/resources/networking-course.jpg",
+    image: "/formation/network.jpg",
     category: "Réseaux",
     author: "Dr. Paul Tsogo",
     year: "2023",
@@ -181,27 +181,27 @@ const libraryData = [
     id: 5,
     title: "Introduction à la Cybersécurité",
     description: "Un recueil de documents et d'exercices pratiques sur les fondamentaux de la cybersécurité.",
-    image: "/images/resources/cybersecurity-book.jpg",
+    image: "/formation/securite.jpg",
     category: "Sécurité",
     author: "Ing. Sophie Kamdem",
     year: "2024",
     type: "Livre",
     format: "PDF",
     size: "14.3 MB",
-    link: "/resources/library/cybersecurity"
+    link: "#"
   },
   {
     id: 6,
     title: "Intelligence Artificielle : Fondements et Applications",
-    description: "Un ouvrage de référence sur l'intelligence artificielle, le machine learning et le deep learning.",
-    image: "/images/resources/ai-book.jpg",
+    description: "Un ouvrage sur les bases de l'intelligence artificielle et le machine learning ",
+    image: "/formation/ai.jpg",
     category: "IA & Machine Learning",
-    author: "Prof. Bernard Moussa",
+    author: "Mbassi Loic",
     year: "2023",
     type: "Livre",
     format: "PDF",
     size: "18.9 MB",
-    link: "/resources/library/ai-foundations"
+    link: "#"
   }
 ];
 

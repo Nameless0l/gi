@@ -186,12 +186,12 @@ const CustomIcon = ({ emoji, label }) => (
   ],
   
   sponsors: [
-    { name: "Orange Cameroun", logo: "/images/sponsors/orange.png", level: "Platine" },
-    { name: "MTN Cameroun", logo: "/images/sponsors/mtn.png", level: "Or" },
-    { name: "Microsoft", logo: "/images/sponsors/microsoft.png", level: "Or" },
-    { name: "Université de Yaoundé", logo: "/images/sponsors/univ-yaounde.png", level: "Argent" },
-    { name: "Google Developer Groups", logo: "/images/sponsors/gdg.png", level: "Argent" },
-    { name: "ENSPY", logo: "/images/sponsors/enspy.png", level: "Partenaire" }
+    { name: "Orange Cameroun", logo: "/sponsors/enspy.png", level: "Platine" },
+    { name: "MTN Cameroun", logo: "/sponsors/enspy.png", level: "Or" },
+    { name: "Microsoft", logo: "/sponsors/enspy.png", level: "Or" },
+    { name: "Université de Yaoundé", logo: "/sponsors/enspy.png", level: "Argent" },
+    { name: "Google Developer Groups", logo: "/sponsors/enspy.png", level: "Argent" },
+    { name: "ENSPY", logo: "/sponsors/enspy.png", level: "Partenaire" }
   ],
   
   faqs: [
@@ -592,13 +592,11 @@ export default function HackathonPage() {
               <Typography variant="body1" paragraph sx={{ color: 'text.secondary', mb: 3 }}>
                 Le Hackverse 2025 est un événement intensif de 24 heures où les participants,
                 organisés en équipes, relèveront des défis technologiques concrets en développant
-                des solutions innovantes basées sur l'intelligence artificielle.
+                des solutions innovantes.
               </Typography>
               
               <Typography variant="body1" paragraph sx={{ color: 'text.secondary', mb: 3 }}>
-                Que vous soyez étudiant, professionnel ou simplement passionné par la technologie,
-                cet événement vous offre l'opportunité de mettre en pratique vos compétences,
-                d'apprendre auprès d'experts du domaine et potentiellement de remporter des prix importants.
+                Si vous etes étudiant, cet événement vous offre l'opportunité de mettre en pratique vos compétences,d'apprendre auprès d'experts du domaine et potentiellement de remporter des prix importants.
               </Typography>
               
               <List sx={{ mb: 2 }}>
@@ -621,7 +619,7 @@ export default function HackathonPage() {
             <Grid item xs={12} md={6}>
               <Box
                 component="img"
-                src="/images/hackathon-team.jpg"
+                src="/WhatsApp Image 2025-04-06 at 12.21.45.jpeg"
                 alt="Équipe de hackathon"
                 sx={{
                   width: '100%',
@@ -1607,144 +1605,71 @@ export default function HackathonPage() {
               sx={{
                 maxWidth: 700,
                 mx: 'auto',
-                color: 'text.secondary'
+                color: 'text.secondary',
+                mb: 5
               }}
             >
-              Complétez le formulaire ci-dessous pour réserver votre place au Hackverse 2025.
-              Les places sont limitées !
+              Les places pour le HackVerse 2025 sont limitées ! Inscrivez-vous dès maintenant via notre formulaire en ligne pour réserver votre place.
             </Typography>
-          </Box>
-
-          <Paper
-            elevation={2}
-            component="form"
-            sx={{
-              p: { xs: 3, md: 5 },
-              borderRadius: 2,
-            }}
-          >
-            <Grid container spacing={3}>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  required
-                  fullWidth
-                  label="Prénom"
-                  variant="outlined"
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  required
-                  fullWidth
-                  label="Nom"
-                  variant="outlined"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  label="Email"
-                  type="email"
-                  variant="outlined"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  label="Téléphone"
-                  variant="outlined"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  select
-                  required
-                  fullWidth
-                  label="Statut"
-                  variant="outlined"
-                  defaultValue=""
-                  SelectProps={{
-                    native: true,
-                  }}
-                >
-                  <option value="" disabled>Sélectionnez votre statut</option>
-                  <option value="student">Étudiant</option>
-                  <option value="professional">Professionnel</option>
-                  <option value="other">Autre</option>
-                </TextField>
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  select
-                  fullWidth
-                  label="Compétences principales"
-                  variant="outlined"
-                  defaultValue=""
-                  SelectProps={{
-                    native: true,
-                    multiple: false,
-                  }}
-                >
-                  <option value="" disabled>Sélectionnez votre domaine d'expertise</option>
-                  <option value="development">Développement</option>
-                  <option value="data">Data Science / IA</option>
-                  <option value="design">Design UX/UI</option>
-                  <option value="business">Business / Marketing</option>
-                  <option value="other">Autre</option>
-                </TextField>
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  multiline
-                  rows={4}
-                  fullWidth
-                  label="Pourquoi souhaitez-vous participer au hackathon?"
-                  variant="outlined"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  select
-                  fullWidth
-                  label="Avez-vous déjà une idée de projet ou une équipe?"
-                  variant="outlined"
-                  defaultValue=""
-                  SelectProps={{
-                    native: true,
-                  }}
-                >
-                  <option value="" disabled>Sélectionnez une option</option>
-                  <option value="idea">J'ai une idée mais pas d'équipe</option>
-                  <option value="team">J'ai une équipe mais pas d'idée précise</option>
-                  <option value="both">J'ai une idée et une équipe</option>
-                  <option value="none">Je n'ai ni idée ni équipe pour le moment</option>
-                </TextField>
-              </Grid>
-              <Grid item xs={12}>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                  fullWidth
-                  startIcon={<PersonAdd />}
-                  sx={{ py: 1.5, mt: 2 }}
-                >
-                  S'inscrire au hackathon
-                </Button>
-              </Grid>
-            </Grid>
-          </Paper>
-
-          <Box sx={{ textAlign: 'center', mt: 4 }}>
-            <Typography variant="body2" color="text.secondary">
-              Les inscriptions sont ouvertes jusqu'au 10 janvier 2025. Pour toute question, 
-              contactez-nous à{' '}
-              <a href="mailto:hackathon@clubgi.com" color="primary">
-                hackathon@clubgi.com
-              </a>
-            </Typography>
+            
+            <Box sx={{ display: 'flex', justifyContent: 'center', mb: 8 }}>
+              <Button
+                variant="contained"
+                color="primary"
+                size="large"
+                component="a"
+                href="https://forms.google.com/hackverse2025" // Lien vers le Google Form
+                target="_blank"
+                rel="noopener noreferrer"
+                startIcon={<PersonAdd />}
+                sx={{ 
+                  py: 2, 
+                  px: 6, 
+                  fontSize: '1.1rem',
+                  fontWeight: 600,
+                  boxShadow: '0 8px 20px rgba(208, 96, 14, 0.25)',
+                  '&:hover': {
+                    transform: 'translateY(-5px)',
+                    boxShadow: '0 12px 28px rgba(208, 96, 14, 0.35)',
+                  },
+                  transition: 'all 0.3s ease'
+                }}
+              >
+                Formulaire d'inscription
+              </Button>
+            </Box>
+            
+            <Paper
+              elevation={1}
+              sx={{
+                p: 4,
+                borderRadius: 2,
+                bgcolor: 'background.accent',
+                maxWidth: 700,
+                mx: 'auto'
+              }}
+            >
+              <Typography variant="h5" sx={{ fontWeight: 600, mb: 2, color: 'primary.main' }}>
+                Informations importantes
+              </Typography>
+              <Box sx={{ textAlign: 'left', display: 'flex', flexDirection: 'column', gap: 2 }}>
+                <Typography variant="body1">
+                  <strong>Date limite d'inscription:</strong> 18 avril 2025
+                </Typography>
+                <Typography variant="body1">
+                  <strong>Annonce des équipes sélectionnées:</strong> 28 avril 2025
+                </Typography>
+                <Typography variant="body1">
+                  <strong>Prérequis:</strong> Passion pour la technologie, curiosité et esprit d'équipe.
+                </Typography>
+                <Typography variant="body1">
+                  <strong>Contact:</strong> Pour toute question, contactez-nous à{' '}
+                  <a href="mailto:hackathon@gi-enspy.com" color="primary">
+                    hackathon@clubgi.com
+                  </a>
+                </Typography>
+              </Box>
+            </Paper>
           </Box>
         </Container>
       </Box>
