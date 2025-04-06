@@ -672,7 +672,7 @@ export default function HackathonPage() {
               {
                 icon: <Code fontSize="large" color="primary" />,
                 title: "Apprentissage pratique",
-                description: "Appliquez vos connaissances en IA à des problèmes concrets et apprenez de nouvelles technologies."
+                description: "Appliquez vos connaissances à des problèmes concrets et apprenez de nouvelles technologies."
               },
               {
                 icon: <Groups fontSize="large" color="primary" />,
@@ -682,17 +682,17 @@ export default function HackathonPage() {
               {
                 icon: <EmojiEvents fontSize="large" color="primary" />,
                 title: "Prix attractifs",
-                description: "Gagnez des prix en espèces, des opportunités d'incubation et du mentorat pour développer votre projet."
+                description: "Gagnez des prix en espèces, des opportunités et du mentorat pour développer votre projet."
               },
               {
                 icon: <Build fontSize="large" color="primary" />,
                 title: "Mentorat d'experts",
-                description: "Bénéficiez des conseils et du soutien d'experts du domaine tout au long de l'événement."
+                description: "Bénéficiez des conseils d'experts du domaine tout au long de l'événement."
               },
               {
                 icon: <School fontSize="large" color="primary" />,
                 title: "Ateliers de formation",
-                description: "Participez à des ateliers sur les dernières technologies et méthodologies en IA."
+                description: "Participez à des ateliers sur les dernières technologies et méthodologies."
               },
               {
                 icon: <Lightbulb fontSize="large" color="primary" />,
