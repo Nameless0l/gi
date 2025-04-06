@@ -59,18 +59,18 @@ const featuredProjects = [
 
 const upcomingEvents = [
   {
-    title: "Hackathon IA",
+    title: "Hackathonverse",
     date: "15 Janvier 2025",
-    description: "Un hackathon intensif de 24 heures sur les applications de l'intelligence artificielle.",
-    image: "/images/events/hackathon-ia.jpg",
-    link: "/hackathon"
+    description: "Un hackathon intensif de 24 heures",
+    image: "/hackberse.jpg",
+    link: "#"
   },
   {
-    title: "Workshop Cloud Computing",
-    date: "22 Février 2025",
-    description: "Atelier pratique sur les services cloud et le déploiement d'applications.",
-    image: "/images/events/cloud-workshop.jpg",
-    link: "/events/cloud-workshop"
+    title: "Formation en Laravel",
+    date: "22 Avril 2025",
+    description: "Atelier de développement web avec Laravel",
+    image: "/laravel.png",
+    link: "#"
   }
 ];
 
