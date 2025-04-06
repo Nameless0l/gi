@@ -398,7 +398,7 @@ export default function HackathonPage() {
                     lineHeight: 1.6,
                   }}
                 >
-                  24 heures pour créer des solutions innovantes basées sur l'IA 
+                  24 heures pour créer des solutions innovantes basées sur les les nouvelles technologies
                   qui changeront l'avenir du Cameroun.
                 </Typography>
                 
@@ -474,7 +474,7 @@ export default function HackathonPage() {
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                     <EmojiEvents sx={{ color: 'rgba(255, 255, 255, 0.8)' }} />
                     <Typography variant="body2" sx={{ color: 'rgba(255, 255, 255, 0.8)' }}>
-                      1 750 000 FCFA en prix
+                      175 000 FCFA en prix
                     </Typography>
                   </Box>
                 </Box>
