@@ -59,10 +59,10 @@ const featuredProjects = [
 
 const upcomingEvents = [
   {
-    title: "Hackathonverse",
+    title: "Hackverse",
     date: "15 Janvier 2025",
     description: "Un hackathon intensif de 24 heures",
-    image: "/hackberse.jpg",
+    image: "/hackverse.jpg",
     link: "#"
   },
   {
