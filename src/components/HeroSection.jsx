@@ -1,161 +1,243 @@
+// src/components/HeroSection.js
 import React from 'react';
 import {
-    Box,
-    Container,
-    Typography,
-    Button,
-    useTheme
+  Box,
+  Container,
+  Typography,
+  Button,
+  useTheme,
+  useMediaQuery
 } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import { ArrowForward } from '@mui/icons-material';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
-// Styled components
-const GradientBox = styled(Box)(({ theme }) => ({
-    background: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.primary.light} 90%)`,
-    minHeight: '100vh',
-    width: '100vw', // Ajout de la largeur complète
-    display: 'flex',
-    alignItems: 'center',
-    color: 'white',
-    position: 'relative',
-    overflow: 'hidden',
-    margin: 0, // Réinitialisation des marges
-    marginBottom: 100, // Réinitialisation des marges
-    padding: 0, // Réinitialisation des paddings
-    boxSizing: 'border-box', // S'assure que les paddings sont inclus dans la largeur
-    left: '50%', // Centre l'élément
-    right: '50%', // Centre l'élément
-    marginLeft: '-50vw', // Compense le décalage
-    marginRight: '-50vw', // Compense le décalage
-}));
+/**
+ * Composant HeroSection réutilisable pour les entêtes de pages
+ * 
+ * @param {Object} props - Propriétés du composant
+ * @param {string} props.title - Titre principal
+ * @param {string} props.subtitle - Sous-titre ou description
+ * @param {string} props.overline - Texte affiché au-dessus du titre (optionnel)
+ * @param {string} props.primaryButtonText - Texte du bouton principal (optionnel)
+ * @param {string} props.primaryButtonLink - Lien du bouton principal (optionnel)
+ * @param {string} props.secondaryButtonText - Texte du bouton secondaire (optionnel)
+ * @param {string} props.secondaryButtonLink - Lien du bouton secondaire (optionnel)
+ * @param {React.ReactNode} props.endIcon - Icône à la fin du bouton principal (optionnel)
+ * @param {React.ReactNode} props.secondaryEndIcon - Icône à la fin du bouton secondaire (optionnel)
+ * @param {string} props.imageSrc - Source de l'image (optionnel)
+ * @param {string} props.imageAlt - Texte alternatif pour l'image (optionnel)
+ * @param {number} props.minHeight - Hauteur minimale en vh (par défaut: 50)
+ * @param {boolean} props.fullWidth - Si true, le contenu prend toute la largeur (par défaut: false)
+ * @param {React.ReactNode} props.children - Contenu supplémentaire (optionnel)
+ */
+const HeroSection = ({
+  title,
+  subtitle,
+  overline,
+  primaryButtonText,
+  primaryButtonLink,
+  secondaryButtonText,
+  secondaryButtonLink,
+  endIcon,
+  secondaryEndIcon,
+  imageSrc,
+  imageAlt,
+  minHeight = 50,
+  fullWidth = false,
+  children
+}) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-const WHATSAPP_NUMBER = '00237683862442'; // Replace with actual number
+  return (
+    <Box
+      sx={{
+        position: 'relative',
+        minHeight: `${minHeight}vh`,
+        display: 'flex',
+        alignItems: 'center',
+        backgroundColor: 'primary.main',
+        color: 'white',
+        overflow: 'hidden',
+        py: { xs: 8, md: 10 }
+      }}
+    >
+      {/* Cercles décoratifs */}
+      <Box
+        sx={{
+          position: 'absolute',
+          width: '35vw',
+          height: '35vw',
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%)',
+          top: '-10vw',
+          right: '-5vw',
+          zIndex: 0,
+        }}
+      />
+      
+      <Box
+        sx={{
+          position: 'absolute',
+          width: '25vw',
+          height: '25vw',
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%)',
+          bottom: '5vw',
+          left: '-10vw',
+          zIndex: 0,
+        }}
+      />
 
-
-const HeroSection = () => {
-    const theme = useTheme();
-
-    const handleWhatsAppClick = () => {
-        const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}`;
-        window.open(whatsappUrl, '_blank');
-    };
-    return (
-        <GradientBox>
-            {/* Decorative circles */}
-            <Box
+      <Container maxWidth={fullWidth ? false : "lg"} sx={{ position: 'relative', zIndex: 1 }}>
+        <Box
+          sx={{
+            maxWidth: fullWidth ? 'none' : '800px',
+            mx: fullWidth ? 0 : 'auto',
+            textAlign: fullWidth ? 'left' : 'center',
+          }}
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            {overline && (
+              <Typography
+                variant="overline"
+                component="p"
                 sx={{
-                    position: 'absolute',
-                    top: '5%',
-                    right: '10%',
-                    width: '40vw',
-                    height: '40vw',
-                    maxWidth: 800,
-                    maxHeight: 800,
-                    borderRadius: '50%',
-                    background: 'rgba(255, 255, 255, 0.1)',
+                  color: 'rgba(255, 255, 255, 0.9)',
+                  fontWeight: 600,
+                  letterSpacing: 2,
+                  mb: 2,
+                  fontSize: { xs: '0.8rem', md: '0.9rem' }
                 }}
-            />
-            <Box
+              >
+                {overline}
+              </Typography>
+            )}
+            
+            <Typography
+              variant="h2"
+              component="h1"
+              sx={{
+                fontWeight: 700,
+                mb: 3,
+                fontSize: { xs: '2.5rem', sm: '3rem', md: '3.5rem' },
+                lineHeight: 1.2
+              }}
+            >
+              {title}
+            </Typography>
+            
+            <Typography
+              variant="h6"
+              component="p"
+              sx={{
+                mb: 4,
+                fontWeight: 400,
+                opacity: 0.9,
+                lineHeight: 1.6,
+                fontSize: { xs: '1rem', md: '1.25rem' }
+              }}
+            >
+              {subtitle}
+            </Typography>
+            
+            {(primaryButtonText || secondaryButtonText) && (
+              <Box
                 sx={{
-                    position: 'absolute',
-                    bottom: '10%',
-                    left: '5%',
-                    width: '20vw',
-                    height: '20vw',
-                    maxWidth: 400,
-                    maxHeight: 400,
-                    borderRadius: '50%',
-                    background: 'rgba(255, 255, 255, 0.1)',
+                  display: 'flex',
+                  flexDirection: { xs: 'column', sm: 'row' },
+                  gap: 2,
+                  mt: 4,
+                  justifyContent: fullWidth ? 'flex-start' : 'center'
                 }}
-            />
-
-            <Container maxWidth="lg" sx={{ position: 'relative', py: 8 }}>
-                <Box sx={{ maxWidth: 800 }}>
-                    <Typography
-                        variant="overline"
-                        sx={{
-                            opacity: 0.9,
-                            letterSpacing: 2,
-                            mb: 2,
-                            display: 'block'
-                        }}
-                    >
-                        École Nationale Supérieure Polytechnique De Yaounde
-                    </Typography>
-
-                    <Typography
-                        variant="h1"
-                        component="h1"
-                        sx={{
-                            fontWeight: 700,
-                            mb: 3,
-                            fontSize: { xs: '3rem', sm: '4rem', md: '5rem' },
-                            lineHeight: 1.1
-                        }}
-                    >
-                        Club Génie
-                        <Typography
-                            component="span"
-                            variant="h1"
-                            sx={{
-                                display: 'block',
-                                fontWeight: 700,
-                                fontSize: 'inherit',
-                                color: 'rgba(255, 255, 255, 0.9)'
-                            }}
-                        >
-                            Informatique
-                        </Typography>
-                    </Typography>
-
-                    <Typography
-                        variant="h5"
-                        sx={{
-                            mb: 4,
-                            opacity: 0.9,
-                            maxWidth: '600px',
-                            lineHeight: 1.5
-                        }}
-                    >
-                        Forge ton avenir dans l'innovation technologique et rejoins une communauté
-                        passionnée d'étudiants en informatique.
-                    </Typography>
-
-                    <Box sx={{ display: 'flex', gap: 2 }}>
-                        <Button
-                            variant="contained"
-                            size="large"
-                            endIcon={<ArrowForward />}
-                            onClick={handleWhatsAppClick}
-                            sx={{
-                                bgcolor: 'white',
-                                color: theme.palette.primary.main,
-                                '&:hover': {
-                                    bgcolor: 'rgba(255, 255, 255, 0.9)',
-                                }
-                            }}
-                        >
-                            Nous rejoindre
-                        </Button>
-                        <Button
-                            variant="outlined"
-                            size="large"
-                            sx={{
-                                borderColor: 'white',
-                                color: 'white',
-                                '&:hover': {
-                                    borderColor: 'white',
-                                    bgcolor: 'rgba(255, 255, 255, 0.1)',
-                                }
-                            }}
-                        >
-                            En savoir plus
-                        </Button>
-                    </Box>
-                </Box>
-            </Container>
-        </GradientBox>
-    );
+              >
+                {primaryButtonText && (
+                  <Button
+                    variant="contained"
+                    size="large"
+                    endIcon={endIcon}
+                    component={Link}
+                    href={primaryButtonLink || '#'}
+                    sx={{
+                      bgcolor: 'white',
+                      color: 'primary.main',
+                      px: 4,
+                      py: 1.5,
+                      fontWeight: 600,
+                      '&:hover': {
+                        bgcolor: 'rgba(255, 255, 255, 0.9)',
+                      }
+                    }}
+                  >
+                    {primaryButtonText}
+                  </Button>
+                )}
+                
+                {secondaryButtonText && (
+                  <Button
+                    variant="outlined"
+                    size="large"
+                    endIcon={secondaryEndIcon}
+                    component={Link}
+                    href={secondaryButtonLink || '#'}
+                    sx={{
+                      borderColor: 'white',
+                      color: 'white',
+                      px: 4,
+                      py: 1.5,
+                      fontWeight: 600,
+                      '&:hover': {
+                        borderColor: 'white',
+                        bgcolor: 'rgba(255, 255, 255, 0.1)',
+                      }
+                    }}
+                  >
+                    {secondaryButtonText}
+                  </Button>
+                )}
+              </Box>
+            )}
+            
+            {/* Image si fournie */}
+            {imageSrc && (
+              <Box
+                sx={{
+                  mt: 6,
+                  display: 'flex',
+                  justifyContent: fullWidth ? 'flex-start' : 'center'
+                }}
+              >
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.7 }}
+                >
+                  <Box
+                    component="img"
+                    src={imageSrc}
+                    alt={imageAlt || "Image d'illustration"}
+                    sx={{
+                      maxWidth: '100%',
+                      height: 'auto',
+                      borderRadius: 2,
+                      boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+                    }}
+                  />
+                </motion.div>
+              </Box>
+            )}
+            
+            {/* Contenu supplémentaire si fourni */}
+            {children}
+          </motion.div>
+        </Box>
+      </Container>
+    </Box>
+  );
 };
 
 export default HeroSection;

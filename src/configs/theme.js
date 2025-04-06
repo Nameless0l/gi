@@ -1,158 +1,207 @@
-// src/theme.js
+// src/configs/theme.js
 import { createTheme } from '@mui/material/styles';
 
-// Fonction pour définir les tokens de design en fonction du mode
 export const getDesignTokens = (mode) => ({
-    palette: {
-        mode,
-        ...(mode === 'light'
-            ? {
-                primary: {
-                    main: '#0071ff', // Bleu principal pour le mode clair
-                },
-                secondary: {
-                    main: '#ff4081', // Couleur secondaire
-                },
-                error: {
-                    main: '#d32f2f', // Couleur d'erreur
-                },
-                warning: {
-                    main: '#ff9800', // Couleur d'avertissement
-                },
-                info: {
-                    main: '#1976d2', // Couleur d'information
-                },
-                success: {
-                    main: '#388e3c', // Couleur de succès
-                },
-                background: {
-                    default: '#f5f5f5', // Fond principal pour le mode clair
-                    paper: '#ffffff', // Papier pour les composants comme les cartes
-                },
-                text: {
-                    primary: '#000000', // Texte principal pour le mode clair
-                    secondary: '#555555', // Texte secondaire
-                    disabled: '#aaaaaa', // Texte désactivé
-                },
-            }
-            : {
-                primary: {
-                    main: '#686868', // Gris pour le mode sombre
-                },
-                secondary: {
-                    main: '#ff4081', // Couleur secondaire
-                },
-                error: {
-                    main: '#d32f2f',
-                },
-                warning: {
-                    main: '#ff9800',
-                },
-                info: {
-                    main: '#1976d2',
-                },
-                success: {
-                    main: '#388e3c',
-                },
-                background: {
-                    default: '#121212', // Fond principal pour le mode sombre
-                    paper: '#1e1e1e', // Papier pour le mode sombre
-                },
-                text: {
-                    primary: '#ffffff', // Texte principal pour le mode sombre
-                    secondary: '#e0e0e0', // Texte secondaire
-                    disabled: '#757575', // Texte désactivé
-                },
-            }),
+  palette: {
+    mode,
+    ...(mode === 'light'
+      ? {
+          primary: {
+            main: '#D0600E', // Couleur principale orange chaleureuse
+            light: '#E87D40',
+            dark: '#A34800',
+          },
+          secondary: {
+            main: '#334155', // Bleu-gris foncé comme couleur secondaire (similaire à Mila)
+            light: '#64748B',
+            dark: '#1E293B',
+          },
+          background: {
+            default: '#ffffff',
+            paper: '#f8fafc', // Légèrement teinté comme Mila
+            accent: '#F1F5F9', // Pour les sections alternées
+          },
+          text: {
+            primary: '#0F172A', // Presque noir pour texte principal
+            secondary: '#475569', // Gris pour le texte secondaire
+            light: '#94A3B8', // Gris clair pour les éléments moins importants
+          },
+        }
+      : {
+          primary: {
+            main: '#E87D40', // Version plus claire pour le mode sombre
+            light: '#F59B6C',
+            dark: '#A34800',
+          },
+          secondary: {
+            main: '#64748B',
+            light: '#94A3B8',
+            dark: '#334155',
+          },
+          background: {
+            default: '#0F172A', // Bleu très foncé comme fond principal
+            paper: '#1E293B', // Plus clair que le fond mais toujours foncé
+            accent: '#334155', // Pour les sections alternées en mode sombre
+          },
+          text: {
+            primary: '#F8FAFC', // Blanc cassé pour le texte principal
+            secondary: '#CBD5E1', // Gris clair pour le texte secondaire
+            light: '#64748B', // Gris moyen pour les éléments moins importants
+          },
+        }),
+  },
+  typography: {
+    fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+    h1: {
+      fontSize: '3.5rem',
+      fontWeight: 700,
+      lineHeight: 1.2,
+      letterSpacing: '-0.02em',
+      '@media (max-width:600px)': {
+        fontSize: '2.5rem',
+      },
     },
-    typography: {
-        fontFamily: '"Montserrat", sans-serif', // Police utilisée
-        h1: {
-            fontSize: '2rem',
-            fontWeight: 700,
-            letterSpacing: '-0.5px',
-        },
-        h2: {
-            fontSize: '1.75rem',
-            fontWeight: 700,
-        },
-        h3: {
-            fontSize: '1.5rem',
-            fontWeight: 700,
-        },
-        h4: {
-            fontSize: '1.25rem',
-            fontWeight: 600,
-        },
-        h5: {
-            fontSize: '1rem',
-            fontWeight: 600,
-        },
-        h6: {
-            fontSize: '0.875rem',
-            fontWeight: 600,
-        },
-        body1: {
-            fontSize: '1rem',
-            fontWeight: 400,
-        },
-        body2: {
-            fontSize: '0.875rem',
-            fontWeight: 400,
-        },
-        button: {
-            fontWeight: 600,
-        },
+    h2: {
+      fontSize: '2.75rem',
+      fontWeight: 700,
+      lineHeight: 1.2,
+      letterSpacing: '-0.01em',
+      '@media (max-width:600px)': {
+        fontSize: '2rem',
+      },
     },
-    components: {
-        MuiButton: {
-            styleOverrides: {
-                root: {
-                    borderRadius: '8px', // Coins arrondis pour les boutons
-                    padding: '10px 20px', // Espacement interne
-                    textTransform: 'none', // Pas de transformation de texte (par défaut en majuscules)
-                    boxShadow: 'none', // Pas de shadow sur les boutons
-                    '&:hover': {
-                        backgroundColor: '#1976d2', // Changer la couleur au survol
-                    },
-                },
-            },
-        },
-        MuiPaper: {
-            styleOverrides: {
-                root: {
-                    padding: '20px', // Espacement interne des papiers
-                    borderRadius: '10px', // Coins arrondis
-                },
-            },
-        },
-        MuiCard: {
-            styleOverrides: {
-                root: {
-                    borderRadius: '12px', // Coins arrondis pour les cartes
-                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Ombre légère
-                },
-            },
-        },
-        MuiTextField: {
-            styleOverrides: {
-                root: {
-                    borderRadius: '8px', // Coins arrondis pour les champs de texte
-                    '& .MuiOutlinedInput-root': {
-                        '& fieldset': {
-                            borderColor: '#ccc', // Bordure initiale
-                        },
-                        '&:hover fieldset': {
-                            borderColor: '#1976d2', // Bordure au survol
-                        },
-                        '&.Mui-focused fieldset': {
-                            borderColor: '#1976d2', // Bordure quand focus
-                        },
-                    },
-                },
-            },
-        },
+    h3: {
+      fontSize: '2rem',
+      fontWeight: 600,
+      lineHeight: 1.3,
+      '@media (max-width:600px)': {
+        fontSize: '1.5rem',
+      },
     },
+    h4: {
+      fontSize: '1.5rem',
+      fontWeight: 600,
+      lineHeight: 1.4,
+    },
+    h5: {
+      fontSize: '1.25rem',
+      fontWeight: 600,
+      lineHeight: 1.5,
+    },
+    h6: {
+      fontSize: '1rem',
+      fontWeight: 600,
+      lineHeight: 1.6,
+    },
+    body1: {
+      fontSize: '1.125rem',
+      lineHeight: 1.7,
+    },
+    body2: {
+      fontSize: '1rem',
+      lineHeight: 1.6,
+    },
+    subtitle1: {
+      fontSize: '1.125rem',
+      fontWeight: 500,
+      lineHeight: 1.6,
+      letterSpacing: '0.01em',
+    },
+    subtitle2: {
+      fontSize: '0.875rem',
+      fontWeight: 500,
+      lineHeight: 1.6,
+      letterSpacing: '0.01em',
+    },
+    button: {
+      textTransform: 'none',
+      fontWeight: 600,
+      letterSpacing: '0.01em',
+    },
+  },
+  shape: {
+    borderRadius: 8,
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: '4px',
+          padding: '0.75rem 1.5rem',
+          fontWeight: 600,
+          transition: 'all 0.2s ease-in-out',
+          textTransform: 'none',
+          boxShadow: 'none',
+        },
+        containedPrimary: {
+          '&:hover': {
+            transform: 'translateY(-2px)',
+            boxShadow: '0 6px 12px rgba(208, 96, 14, 0.2)',
+          },
+        },
+        outlinedPrimary: {
+          borderWidth: '2px',
+          '&:hover': {
+            borderWidth: '2px',
+          },
+        },
+      },
+    },
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          boxShadow: 'none',
+          borderBottom: '1px solid',
+          borderColor: 'rgba(203, 213, 225, 0.3)', // Bordure subtile comme sur Mila
+        },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
+          transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+          '&:hover': {
+            transform: 'translateY(-8px)',
+            boxShadow: '0 12px 24px rgba(0, 0, 0, 0.1)',
+          },
+        },
+      },
+    },
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          paddingLeft: '2rem',
+          paddingRight: '2rem',
+          '@media (max-width:600px)': {
+            paddingLeft: '1rem',
+            paddingRight: '1rem',
+          },
+        },
+      },
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: 'none',
+          position: 'relative',
+          '&:after': {
+            content: '""',
+            position: 'absolute',
+            width: '0',
+            height: '2px',
+            bottom: '-4px',
+            left: '0',
+            background: 'currentColor',
+            transition: 'width 0.3s ease',
+          },
+          '&:hover:after': {
+            width: '100%',
+          },
+        },
+      },
+    },
+  },
 });
 
 // Fonction pour créer le thème avec le mode
