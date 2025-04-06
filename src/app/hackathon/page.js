@@ -7,6 +7,8 @@ import {
   Typography,
   Grid,
   Button,
+  Link as MuiLink,
+  useScrollTrigger,
   Card,
   CardContent,
   Avatar,
@@ -62,6 +64,8 @@ const fadeInUp = {
     }
   }
 };
+
+
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -224,7 +228,10 @@ export default function HackathonPage() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [tabValue, setTabValue] = useState(0);
-  
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 100,
+  });
   const handleTabChange = (event, newValue) => {
     setTabValue(newValue);
   };
@@ -255,7 +262,7 @@ export default function HackathonPage() {
           bottom: 20,
           right: 20,
           zIndex: 1000,
-          display: 'trigger' ? 'block' : 'none',
+          display: trigger ? 'block' : 'none',
         }}
       >
         <Button
@@ -1664,9 +1671,9 @@ export default function HackathonPage() {
                 </Typography>
                 <Typography variant="body1">
                   <strong>Contact:</strong> Pour toute question, contactez-nous à{' '}
-                  <a href="mailto:hackathon@gi-enspy.com" color="primary">
+                  <MuiLink href="mailto:hackathon@gi-enspy.com" color="primary">
                     hackathon@clubgi.com
-                  </a>
+                  </MuiLink>
                 </Typography>
               </Box>
             </Paper>
