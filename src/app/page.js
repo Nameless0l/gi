@@ -40,19 +40,19 @@ const featuredProjects = [
   {
     title: "Assistant IA pour Étudiants",
     description: "Un chatbot alimenté par GPT pour aider les étudiants dans leurs études d'informatique.",
-    image: "/images/projects/ai-assistant.jpg",
-    link: "/activities/projects/ai-assistant"
+    image: "/project/ai-assistant.png",
+    link: "#"
   },
   {
     title: "Application Mobile de Campus",
     description: "Application mobile pour aider les étudiants à naviguer sur le campus et accéder aux ressources.",
-    image: "/images/projects/campus-app.jpg",
-    link: "/activities/projects/campus-app"
+    image: "/project/app_mobile.jpg",
+    link: "#"
   },
   {
-    title: "Système de Gestion de Bibliothèque",
-    description: "Plateforme numérique pour gérer les emprunts et retours de livres de la bibliothèque de l'ENSPY.",
-    image: "/images/projects/library-system.jpg",
+    title: "Projet antivirus",
+    description: "Une antivurs performant conçus par la cellule projet du club GI.",
+    image: "/project/antivirus.jpg",
     link: "/activities/projects/library-system"
   }
 ];
