@@ -121,7 +121,7 @@ const achievements = [
   {
     year: "2021",
     title: "Organisation du premier hackathon IA à l'ENSPY",
-    description: "Événement ayant réuni plus de 100 participants pendant 48 heures."
+    description: "Événement ayant réuni plus de 100 participants pendant 24 heures."
   },
   {
     year: "2020",
@@ -363,7 +363,7 @@ export default function AboutPage() {
               >
                 <Box
                   component="img"
-                  src="/images/club-histoire.jpg"
+                  src="/about.jpg"
                   alt="Histoire du Club GI"
                   sx={{
                     width: '100%',

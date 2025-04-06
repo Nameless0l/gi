@@ -391,7 +391,7 @@ export default function HackathonPage() {
                     lineHeight: 1.6,
                   }}
                 >
-                  48 heures pour créer des solutions innovantes basées sur l'IA 
+                  24 heures pour créer des solutions innovantes basées sur l'IA 
                   qui changeront l'avenir du Cameroun.
                 </Typography>
                 
@@ -453,7 +453,7 @@ export default function HackathonPage() {
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                     <Timer sx={{ color: 'rgba(255, 255, 255, 0.8)' }} />
                     <Typography variant="body2" sx={{ color: 'rgba(255, 255, 255, 0.8)' }}>
-                      48 heures
+                      24 heures
                     </Typography>
                   </Box>
                   
@@ -590,7 +590,7 @@ export default function HackathonPage() {
               </Typography>
               
               <Typography variant="body1" paragraph sx={{ color: 'text.secondary', mb: 3 }}>
-                Le Hackathon IA 2025 est un événement intensif de 48 heures où les participants,
+                Le Hackathon IA 2025 est un événement intensif de 24 heures où les participants,
                 organisés en équipes, relèveront des défis technologiques concrets en développant
                 des solutions innovantes basées sur l'intelligence artificielle.
               </Typography>
@@ -755,7 +755,7 @@ export default function HackathonPage() {
               Programme
             </Typography>
             <Typography variant="h3" component="h2" sx={{ fontWeight: 700, mb: 3 }}>
-              48 heures d'innovation
+              24 heures d'innovation
             </Typography>
             <Typography
               variant="body1"
@@ -1797,7 +1797,7 @@ export default function HackathonPage() {
             Prêt à relever le défi?
           </Typography>
           <Typography variant="h6" component="p" sx={{ mb: 5, opacity: 0.9, fontWeight: 400 }}>
-            Rejoignez-nous pour 48 heures d'innovation, de collaboration et d'apprentissage.
+            Rejoignez-nous pour 24 heures d'innovation, de collaboration et d'apprentissage.
           </Typography>
           <Button
             variant="contained"

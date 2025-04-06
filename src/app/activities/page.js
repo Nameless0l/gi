@@ -175,7 +175,7 @@ const eventsData = [
   {
     id: 1,
     title: "Hackathon IA 2025",
-    description: "Un hackathon intensif de 48 heures axé sur l'innovation dans le domaine de l'intelligence artificielle.",
+    description: "Un hackathon intensif de 24 heures axé sur l'innovation dans le domaine de l'intelligence artificielle.",
     image: "/images/events/hackathon-ia.jpg",
     date: "15-17 Janvier 2025",
     location: "Campus ENSPY, Yaoundé",

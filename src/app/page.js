@@ -61,7 +61,7 @@ const upcomingEvents = [
   {
     title: "Hackathon IA",
     date: "15 Janvier 2025",
-    description: "Un hackathon intensif de 48 heures sur les applications de l'intelligence artificielle.",
+    description: "Un hackathon intensif de 24 heures sur les applications de l'intelligence artificielle.",
     image: "/images/events/hackathon-ia.jpg",
     link: "/hackathon"
   },
@@ -299,7 +299,7 @@ export default function HomePage() {
               >
                 <Box
                   component="img"
-                  src="/images/hero-image.png"
+                  src="/hero.jpg"
                   alt="Étudiants travaillant sur un projet informatique"
                   sx={{
                     width: '100%',
@@ -324,14 +324,14 @@ export default function HomePage() {
                   }}
                 >
                   <Typography variant="subtitle2" sx={{ fontWeight: 700, color: 'primary.main' }}>
-                    +20 Projets
+                    +5 Projets
                   </Typography>
                   <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                     réalisés chaque année
                   </Typography>
                 </Paper>
                 <Paper
-                  elevation={4}
+                  elevation={4}Histoire du Club GI
                   sx={{
                     position: 'absolute',
                     top: { xs: '-10px', md: '40px' },
