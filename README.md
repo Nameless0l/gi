@@ -1,2 +1,1 @@
-# site-vitrine-club
-2024/2025 - web site
+[Comment synchroniser](https://claude.ai/share/8d1dc340-3d01-4102-90ec-a65e75327638) 
