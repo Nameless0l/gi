@@ -593,7 +593,7 @@ export default function HackathonPage() {
                 component="h2"
                 sx={{ fontWeight: 700, mb: 3 }}
               >
-                Un Hackathon qui mets au defis les etudiants
+                Un Hackathon qui met au défis les étudiants
               </Typography>
               
               <Typography variant="body1" paragraph sx={{ color: 'text.secondary', mb: 3 }}>
@@ -963,7 +963,7 @@ export default function HackathonPage() {
       </Box>
 
       {/* Section Thèmes/Défis */}
-      <Box
+      {/* <Box
         id="themes"
         component={motion.div}
         initial="hidden"
@@ -1047,10 +1047,10 @@ export default function HackathonPage() {
             ))}
           </Grid>
         </Container>
-      </Box>
+      </Box> */}
 
       {/* Section Jury */}
-      <Box
+      {/* <Box
         id="jury"
         component={motion.div}
         initial="hidden"
@@ -1127,7 +1127,7 @@ export default function HackathonPage() {
             ))}
           </Grid>
         </Container>
-      </Box>
+      </Box> */}
 
       {/* Section Prix */}
       <Box
@@ -1234,7 +1234,7 @@ export default function HackathonPage() {
       </Box>
 
       {/* Section Sponsors */}
-      <Box
+      {/* <Box
         component={motion.div}
         initial="hidden"
         whileInView="visible"
@@ -1509,7 +1509,7 @@ export default function HackathonPage() {
             </Grid>
           </Box>
         </Container>
-      </Box>
+      </Box> */}
 
       {/* Section FAQ */}
       <Box
@@ -1671,8 +1671,8 @@ export default function HackathonPage() {
                 </Typography>
                 <Typography variant="body1">
                   <strong>Contact:</strong> Pour toute question, contactez-nous à{' '}
-                  <MuiLink href="mailto:hackathon@gi-enspy.com" color="primary">
-                    hackathon@clubgi.com
+                  <MuiLink href="mailto:clubinfoenspy@gmail.com" color="primary">
+                  clubinfoenspy@gmail.com
                   </MuiLink>
                 </Typography>
               </Box>
