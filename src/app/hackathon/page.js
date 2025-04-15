@@ -359,7 +359,7 @@ export default function HackathonPage() {
                     fontSize: { xs: '0.8rem', md: '0.9rem' }
                   }}
                 >
-                  15-17 Janvier 2025 • Campus ENSPY
+                  3-4 Mai 2025 • Campus ENSPY
                 </Typography>
                 
                 <Typography
@@ -608,10 +608,10 @@ export default function HackathonPage() {
               
               <List sx={{ mb: 2 }}>
                 {[
-                  { icon: <CalendarToday color="primary" />, text: "15-17 Janvier 2025" },
+                  { icon: <CalendarToday color="primary" />, text: "15-17 avril 2025" },
                   { icon: <LocationOn color="primary" />, text: "Campus ENSPY, Yaoundé" },
                   { icon: <Groups color="primary" />, text: "Ouvert aux étudiants, professionnels et passionnés" },
-                  { icon: <Timer color="primary" />, text: "Date limite d'inscription: 10 janvier 2025" }
+                  { icon: <Timer color="primary" />, text: "Date limite d'inscription: 23 avril 2025" }
                 ].map((item, index) => (
                   <ListItem key={index} sx={{ px: 0 }}>
                     <ListItemIcon sx={{ minWidth: 36 }}>

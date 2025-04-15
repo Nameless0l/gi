@@ -177,7 +177,7 @@ const eventsData = [
     title: "Hackverse 2025",
     description: "Un hackathon intensif de 24 heures axé sur l'innovation dans le domaine de l'intelligence artificielle.",
     image: "/images/events/hackathon-ia.jpg",
-    date: "15-17 Janvier 2025",
+    date: "3-4 Mai 2025",
     location: "Campus ENSPY, Yaoundé",
     type: "Hackathon",
     upcoming: true,
