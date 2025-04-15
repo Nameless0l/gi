@@ -1625,7 +1625,7 @@ export default function HackathonPage() {
                 color="primary"
                 size="large"
                 component="a"
-                href="https://forms.google.com/hackverse2025" // Lien vers le Google Form
+                href="https://forms.gle/RAEPRS7GL1VwtWh6A" // Lien vers le Google Form
                 target="_blank"
                 rel="noopener noreferrer"
                 startIcon={<PersonAdd />}
