@@ -112,11 +112,11 @@ const CustomIcon = ({ emoji, label }) => (
   ],
   
   fullSchedule: [
-    { date: "7 avril 2025", activity: "Lancement de l'appel à participation et ouverture des inscriptions" },
-    { date: "18 avril 2025", activity: "Clôture des inscriptions pour la phase de présélection ENSPY" },
-    { date: "21 avril 2025", activity: "Début des épreuves de présélection (en ligne)" },
-    { date: "28 avril 2025", activity: "Annonce des équipes ENSPY sélectionnées" },
-    { date: "29 avril - 2 mai 2025", activity: "Briefing des équipes sélectionnées et préparation" },
+    { date: "15 avril 2025", activity: "Lancement de l'appel à participation et ouverture des inscriptions" },
+    { date: "23 avril 2025", activity: "Clôture des inscriptions pour la phase de présélection ENSPY" },
+    { date: "16 avril 2025", activity: "Début des épreuves de présélection (en ligne)" },
+    { date: "25 avril 2025", activity: "Annonce des équipes ENSPY sélectionnées" },
+    { date: "26 avril - 2 mai 2025", activity: "Briefing des équipes sélectionnées et préparation" },
     { date: "3-4 mai 2025", activity: "Hackathon en présentiel (24 heures non-stop)" },
     { date: "10 mai 2025", activity: "Cérémonie de remise des prix et cocktail networking" },
     { date: "Mai - Juin 2025", activity: "Accompagnement des projets lauréats" }
@@ -1384,11 +1384,11 @@ export default function HackathonPage() {
                 Informations importantes
               </Typography>
               <Box sx={{ textAlign: 'left', display: 'flex', flexDirection: 'column', gap: 2 }}>
-                <Typography variant="body1">
+                {/* <Typography variant="body1">
                   <strong>Date limite d'inscription:</strong> 18 avril 2025
-                </Typography>
+                </Typography> */}
                 <Typography variant="body1">
-                  <strong>Annonce des équipes sélectionnées:</strong> 28 avril 2025
+                  <strong>Annonce des équipes sélectionnées:</strong> 24 avril 2025
                 </Typography>
                 <Typography variant="body1">
                   <strong>Prérequis:</strong> Passion pour la technologie, curiosité et esprit d'équipe.
