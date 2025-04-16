@@ -1388,7 +1388,7 @@ export default function HackathonPage() {
                   <strong>Date limite d'inscription:</strong> 18 avril 2025
                 </Typography> */}
                 <Typography variant="body1">
-                  <strong>Annonce des équipes sélectionnées:</strong> 24 avril 2025
+                  <strong>Annonce des équipes sélectionnées:</strong> 25 avril 2025
                 </Typography>
                 <Typography variant="body1">
                   <strong>Prérequis:</strong> Passion pour la technologie, curiosité et esprit d'équipe.

@@ -163,7 +163,7 @@ const faqData = [
     questions: [
       {
         question: "Comment contacter le Club GI pour une question spécifique ?",
-        answer: "Vous pouvez nous contacter de plusieurs façons : via notre formulaire de contact sur le site, par email à clubinfoenspy@gmail.com, par téléphone au +237 683 86 24 42, ou en personne à notre bureau sur le campus de l'ENSPY (Bâtiment A, Niveau 2, Salle 205). Pour des questions spécifiques, vous pouvez également contacter directement le responsable de la cellule concernée."
+        answer: "Vous pouvez nous contacter de plusieurs façons : via notre formulaire de contact sur le site, par email à clubinfoenspy@gmail.com, par téléphone au +237 676 73 82 48 /+237 683 86 24 42. Pour des questions spécifiques, vous pouvez également contacter directement le responsable de la cellule concernée."
       },
       {
         question: "Quels sont les horaires d'ouverture du bureau du club ?",

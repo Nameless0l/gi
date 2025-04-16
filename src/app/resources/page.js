@@ -205,88 +205,88 @@ const libraryData = [
   }
 ];
 
-const toolsData = [
-  {
-    id: 1,
-    title: "GitLab ENSPY",
-    description: "Plateforme de gestion de code source basée sur Git pour les projets des étudiants de l'ENSPY.",
-    image: "/images/resources/gitlab.jpg",
-    category: "Développement",
-    type: "Plateforme",
-    link: "https://gitlab.enspy.cm"
-  },
-  {
-    id: 2,
-    title: "Jupyter Hub ENSPY",
-    description: "Environnement Jupyter pour l'apprentissage et la pratique de la data science et du machine learning.",
-    image: "/images/resources/jupyter.jpg",
-    category: "Data Science",
-    type: "Plateforme",
-    link: "https://jupyter.enspy.cm"
-  },
-  {
-    id: 3,
-    title: "Modèle de Rapport de Projet",
-    description: "Template LaTeX pour la rédaction de rapports de projets suivant les normes de l'ENSPY.",
-    image: "/images/resources/latex-template.jpg",
-    category: "Documentation",
-    type: "Template",
-    format: "ZIP",
-    size: "2.3 MB",
-    link: "/resources/tools/project-report-template"
-  },
-  {
-    id: 4,
-    title: "Pack de Développement Web",
-    description: "Ensemble d'outils et de bibliothèques pour le développement web front-end et back-end.",
-    image: "/images/resources/web-dev-pack.jpg",
-    category: "Développement Web",
-    type: "Pack d'outils",
-    format: "ZIP",
-    size: "45.7 MB",
-    link: "/resources/tools/web-dev-pack"
-  },
-  {
-    id: 5,
-    title: "Moodle ENSPY",
-    description: "Plateforme d'apprentissage en ligne avec les cours et ressources pédagogiques de l'ENSPY.",
-    image: "/images/resources/moodle.jpg",
-    category: "Éducation",
-    type: "Plateforme",
-    link: "https://moodle.enspy.cm"
-  },
-  {
-    id: 6,
-    title: "Dataset Cameroun",
-    description: "Ensemble de données à utiliser pour vos projets d'analyse de données et de machine learning.",
-    image: "/images/resources/dataset.jpg",
-    category: "Data Science",
-    type: "Dataset",
-    format: "ZIP",
-    size: "203.5 MB",
-    link: "/resources/tools/cameroon-dataset"
-  },
-  {
-    id: 7,
-    title: "VS Code avec extensions recommandées",
-    description: "Visual Studio Code préconfiguré avec des extensions recommandées pour le développement.",
-    image: "/images/resources/vscode.jpg",
-    category: "Développement",
-    type: "IDE",
-    format: "ZIP",
-    size: "75.2 MB",
-    link: "/resources/tools/vscode-pack"
-  },
-  {
-    id: 8,
-    title: "API du Club GI",
-    description: "Documentation et accès à l'API du Club GI pour développer des applications intégrées.",
-    image: "/images/resources/api-docs.jpg",
-    category: "API",
-    type: "Documentation",
-    link: "https://api.clubgi.enspy.cm/docs"
-  }
-];
+// const toolsData = [
+//   {
+//     id: 1,
+//     title: "GitLab ENSPY",
+//     description: "Plateforme de gestion de code source basée sur Git pour les projets des étudiants de l'ENSPY.",
+//     image: "/images/resources/gitlab.jpg",
+//     category: "Développement",
+//     type: "Plateforme",
+//     link: "https://gitlab.enspy.cm"
+//   },
+//   {
+//     id: 2,
+//     title: "Jupyter Hub ENSPY",
+//     description: "Environnement Jupyter pour l'apprentissage et la pratique de la data science et du machine learning.",
+//     image: "/images/resources/jupyter.jpg",
+//     category: "Data Science",
+//     type: "Plateforme",
+//     link: "https://jupyter.enspy.cm"
+//   },
+//   {
+//     id: 3,
+//     title: "Modèle de Rapport de Projet",
+//     description: "Template LaTeX pour la rédaction de rapports de projets suivant les normes de l'ENSPY.",
+//     image: "/images/resources/latex-template.jpg",
+//     category: "Documentation",
+//     type: "Template",
+//     format: "ZIP",
+//     size: "2.3 MB",
+//     link: "/resources/tools/project-report-template"
+//   },
+//   {
+//     id: 4,
+//     title: "Pack de Développement Web",
+//     description: "Ensemble d'outils et de bibliothèques pour le développement web front-end et back-end.",
+//     image: "/images/resources/web-dev-pack.jpg",
+//     category: "Développement Web",
+//     type: "Pack d'outils",
+//     format: "ZIP",
+//     size: "45.7 MB",
+//     link: "/resources/tools/web-dev-pack"
+//   },
+//   {
+//     id: 5,
+//     title: "Moodle ENSPY",
+//     description: "Plateforme d'apprentissage en ligne avec les cours et ressources pédagogiques de l'ENSPY.",
+//     image: "/images/resources/moodle.jpg",
+//     category: "Éducation",
+//     type: "Plateforme",
+//     link: "https://moodle.enspy.cm"
+//   },
+//   {
+//     id: 6,
+//     title: "Dataset Cameroun",
+//     description: "Ensemble de données à utiliser pour vos projets d'analyse de données et de machine learning.",
+//     image: "/images/resources/dataset.jpg",
+//     category: "Data Science",
+//     type: "Dataset",
+//     format: "ZIP",
+//     size: "203.5 MB",
+//     link: "/resources/tools/cameroon-dataset"
+//   },
+//   {
+//     id: 7,
+//     title: "VS Code avec extensions recommandées",
+//     description: "Visual Studio Code préconfiguré avec des extensions recommandées pour le développement.",
+//     image: "/images/resources/vscode.jpg",
+//     category: "Développement",
+//     type: "IDE",
+//     format: "ZIP",
+//     size: "75.2 MB",
+//     link: "/resources/tools/vscode-pack"
+//   },
+//   {
+//     id: 8,
+//     title: "API du Club GI",
+//     description: "Documentation et accès à l'API du Club GI pour développer des applications intégrées.",
+//     image: "/images/resources/api-docs.jpg",
+//     category: "API",
+//     type: "Documentation",
+//     link: "https://api.clubgi.enspy.cm/docs"
+//   }
+// ];
 
 export default function ResourcesPage() {
   const theme = useTheme();
@@ -324,11 +324,12 @@ export default function ResourcesPage() {
   
   const filteredTutorials = getFilteredData(tutorialsData);
   const filteredLibrary = getFilteredData(libraryData);
-  const filteredTools = getFilteredData(toolsData);
+  // const filteredTools = getFilteredData(toolsData);
   
   // Obtenir toutes les catégories uniques pour les filtres
   const getAllCategories = () => {
-    const allData = [...tutorialsData, ...libraryData, ...toolsData];
+    // const allData = [...tutorialsData, ...libraryData, ...toolsData];
+    const allData = [...tutorialsData, ...libraryData];
     const categories = allData.map(item => item.category);
     return ['all', ...new Set(categories)];
   };
@@ -529,11 +530,11 @@ export default function ResourcesPage() {
               icon={<Book />} 
               iconPosition="start"
             />
-            <Tab 
+            {/* <Tab 
               label="Outils" 
               icon={<DevicesOther />} 
               iconPosition="start"
-            />
+            /> */}
           </Tabs>
         </Container>
       </Box>
@@ -784,7 +785,7 @@ export default function ResourcesPage() {
                                   </Typography>
                                 </Box>
                                 
-                                <Button
+                                {/* <Button
                                   component={Link}
                                   href={item.link}
                                   color="primary"
@@ -792,7 +793,7 @@ export default function ResourcesPage() {
                                   sx={{ fontWeight: 600 }}
                                 >
                                   Télécharger
-                                </Button>
+                                </Button> */}
                               </Box>
                             </CardContent>
                           </Card>

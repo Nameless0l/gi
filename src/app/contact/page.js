@@ -32,6 +32,8 @@ import {
   School,
   Facebook,
   LinkedIn,
+  WhatsApp,
+  YouTube,
   Twitter as X,
   Instagram,
   GitHub
@@ -61,7 +63,7 @@ const contactInfo = [
   { 
     icon: <Phone fontSize="large" color="primary" />, 
     title: "Téléphone", 
-    content: "+237 683 86 24 42",
+    content: "+237 676 73 82 48 /+237 683 86 24 42  ",
     link: "tel:+237683862442" 
   },
   { 
@@ -79,11 +81,13 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  { icon: <Facebook />, name: "Facebook", url: "https://www.facebook.com/clubgenieinformatique" },
-  { icon: <X />, name: "X (Twitter)", url: "https://x.com/club_info_enspy" },
-  { icon: <Instagram />, name: "Instagram", url: "https://www.instagram.com/club_info_enspy" },
-  { icon: <LinkedIn />, name: "LinkedIn", url: "https://www.linkedin.com/in/club-gi-enspy-1a919b29b" },
-  { icon: <GitHub />, name: "GitHub", url: "https://github.com/club-genie-informatique-enspy" }
+  { icon: <Facebook />, name: 'Facebook', url: 'https://web.facebook.com/people/Club-G%C3%A9nie-Informatique-ENSPY/61552272308234/#' },
+  { icon: <X />, name: 'X (Twitter)', url: 'https://x.com/club_info_enspy' },
+  { icon: <Instagram />, name: 'Instagram', url: 'https://www.instagram.com/club_info_enspy' },
+  { icon: <LinkedIn />, name: 'LinkedIn', url: 'https://www.linkedin.com/in/club-gi-enspy-1a919b29b' },
+  { icon: <GitHub />, name: 'GitHub', url: 'https://github.com/club-genie-informatique-enspy' },
+  { icon: <WhatsApp />, name: 'WhatsApp', url: 'https://chat.whatsapp.com/FsR4zvBn1AVAXDmCM5JbYM' },
+  { icon: <YouTube />, name: 'YouTube', url: 'https://www.youtube.com/@Clubinfoenspy' },
 ];
 
 export default function ContactPage() {
@@ -234,7 +238,7 @@ export default function ContactPage() {
 
       {/* Contenu principal */}
       <Container maxWidth="lg" sx={{ py: { xs: 8, md: 10 } }}>
-        <Grid container spacing={6}>
+        <Grid container spacing={6} justifyContent="center">
           {/* Formulaire de contact */}
           <Grid item xs={12} md={8}>
             <motion.div
@@ -242,7 +246,7 @@ export default function ContactPage() {
               initial="hidden"
               animate="visible"
             >
-              <Paper 
+              {/* <Paper 
                 elevation={0} 
                 sx={{ 
                   p: { xs: 3, sm: 5 }, 
@@ -260,7 +264,7 @@ export default function ContactPage() {
                 
                 <Box component="form" onSubmit={handleSubmit} noValidate>
                   <Grid container spacing={3}>
-                    {/* Type de contact */}
+                    
                     <Grid item xs={12}>
                       <FormControl component="fieldset">
                         <FormLabel component="legend" sx={{ mb: 1, fontWeight: 500 }}>
@@ -296,7 +300,7 @@ export default function ContactPage() {
                       </FormControl>
                     </Grid>
                     
-                    {/* Nom et Prénom */}
+                    
                     <Grid item xs={12} sm={6}>
                       <TextField
                         required
@@ -318,7 +322,7 @@ export default function ContactPage() {
                       />
                     </Grid>
                     
-                    {/* Email et Téléphone */}
+                    
                     <Grid item xs={12} sm={6}>
                       <TextField
                         required
@@ -354,7 +358,7 @@ export default function ContactPage() {
                       />
                     </Grid>
                     
-                    {/* Statut */}
+                    
                     <Grid item xs={12}>
                       <TextField
                         select
@@ -372,7 +376,7 @@ export default function ContactPage() {
                       </TextField>
                     </Grid>
                     
-                    {/* Sujet et Message */}
+                    
                     <Grid item xs={12}>
                       <TextField
                         required
@@ -396,7 +400,7 @@ export default function ContactPage() {
                       />
                     </Grid>
                     
-                    {/* Bouton d'envoi */}
+                    
                     <Grid item xs={12}>
                       <Button
                         type="submit"
@@ -416,12 +420,12 @@ export default function ContactPage() {
                     </Grid>
                   </Grid>
                 </Box>
-              </Paper>
+              </Paper> */}
             </motion.div>
           </Grid>
           
           {/* Informations de contact */}
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={8}>
             <motion.div
               variants={fadeInUp}
               initial="hidden"
@@ -535,18 +539,26 @@ export default function ContactPage() {
       </Container>
       
       {/* Google Maps embed (à remplacer par les coordonnées exactes de l'ENSPY) */}
-      <Box sx={{ height: '450px', width: '100%', mt: 2 }}>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.7738556415513!2d11.491766675468064!3d3.866207096542134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf7eb5615e35%3A0xe79b7cbeff830b59!2s%C3%89cole%20Nationale%20Sup%C3%A9rieure%20Polytechnique%20de%20Yaound%C3%A9!5e0!3m2!1sfr!2scm!4v1712433215639!5m2!1sfr!2scm"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Carte de l'ENSPY"
-        ></iframe>
-      </Box>
+      <Box
+  sx={{
+    height: '450px',
+    width: '800px',
+    mt: 2,
+    mx: 'auto' // Centre horizontalement la Box
+  }}
+>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.757586194874!2d11.498808774901303!3d3.8621130961116785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcfa23aace247%3A0xe07671abb10169f9!2s%C3%89cole%20Nationale%20Sup%C3%A9rieure%20Polytechnique%20de%20Yaound%C3%A9!5e0!3m2!1sfr!2scm!4v1744608543095!5m2!1sfr!2scm"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Carte de l'ENSPY"
+  ></iframe>
+</Box>
+
       
       {/* Snackbar pour les messages de succès/erreur */}
       <Snackbar

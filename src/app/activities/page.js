@@ -177,30 +177,30 @@ const eventsData = [
     title: "Hackverse 2025",
     description: "Un hackathon intensif de 24 heures axé sur l'innovation dans le domaine de l'intelligence artificielle.",
     image: "/images/events/hackathon-ia.jpg",
-    date: "3-4 Mai 2025",
-    location: "Campus ENSPY, Yaoundé",
+    date: "3-4 mai 2025",
+    location: "Locaux ENPSPY",
     type: "Hackathon",
     upcoming: true,
     link: "/hackathon"
   },
-  {
-    id: 2,
-    title: "Workshop Cloud Computing",
-    description: "Atelier pratique sur les services cloud et le déploiement d'applications.",
-    image: "/images/events/cloud-workshop.jpg",
-    date: "22 Février 2025",
-    location: "Salle des conférences, ENSPY",
-    type: "Workshop",
-    upcoming: true,
-    link: "/events/cloud-workshop"
-  },
+  // {
+  //   id: 2,
+  //   title: "Workshop Cloud Computing",
+  //   description: "Atelier pratique sur les services cloud et le déploiement d'applications.",
+  //   image: "/images/events/cloud-workshop.jpg",
+  //   date: "22 Février 2025",
+  //   location: "Salle des conférences, ENSPY",
+  //   type: "Workshop",
+  //   upcoming: true,
+  //   link: "/events/cloud-workshop"
+  // },
   {
     id: 3,
     title: "GI Tech Day 2024",
     description: "Journée dédiée aux dernières innovations technologiques avec des présentations et démonstrations.",
     image: "/images/events/tech-day.jpg",
-    date: "5 Septembre 2024",
-    location: "Amphi 250, ENSPY",
+    date: "21 Decembre 2024",
+    location: "Campus ENSPY",
     type: "Conférence",
     upcoming: false,
     link: "/events/tech-day"
@@ -210,8 +210,8 @@ const eventsData = [
     title: "Coding Competition",
     description: "Compétition de programmation ouverte à tous les étudiants en informatique.",
     image: "/images/events/coding-competition.jpg",
-    date: "15 Mars 2025",
-    location: "Laboratoire informatique, ENSPY",
+    date: "Pas encore défini",
+    location: "Pas encore défini",
     type: "Compétition",
     upcoming: true,
     link: "/events/coding-competition"
@@ -531,7 +531,7 @@ export default function ActivitiesPage() {
                               ))}
                             </Box>
                             
-                            <Button
+                            {/* <Button
                               component={Link}
                               href={project.link}
                               color="primary"
@@ -539,7 +539,7 @@ export default function ActivitiesPage() {
                               sx={{ mt: 'auto', fontWeight: 600 }}
                             >
                               Voir le projet
-                            </Button>
+                            </Button> */}
                           </CardContent>
                         </Card>
                       </motion.div>
@@ -693,7 +693,7 @@ export default function ActivitiesPage() {
                                 </Typography>
                               </Box>
                               
-                              <Button
+                              {/* <Button
                                 component={Link}
                                 href={training.link}
                                 color="primary"
@@ -701,7 +701,7 @@ export default function ActivitiesPage() {
                                 sx={{ fontWeight: 600 }}
                               >
                                 S'inscrire
-                              </Button>
+                              </Button> */}
                             </CardContent>
                           </Card>
                         </motion.div>
@@ -788,7 +788,7 @@ export default function ActivitiesPage() {
                                   </Typography>
                                 </Box>
                                 
-                                <Button
+                                {/* <Button
                                   component={Link}
                                   href={training.link}
                                   color="primary"
@@ -796,7 +796,7 @@ export default function ActivitiesPage() {
                                   sx={{ fontWeight: 600 }}
                                 >
                                   En savoir plus
-                                </Button>
+                                </Button> */}
                               </Box>
                             </CardContent>
                           </Card>
@@ -954,7 +954,7 @@ export default function ActivitiesPage() {
                                 </Box>
                               </Box>
                               
-                              <Button
+                              {/* <Button
                                 component={Link}
                                 href={event.link}
                                 color="primary"
@@ -962,7 +962,7 @@ export default function ActivitiesPage() {
                                 sx={{ fontWeight: 600 }}
                               >
                                 En savoir plus
-                              </Button>
+                              </Button> */}
                             </CardContent>
                           </Card>
                         </motion.div>
@@ -1058,7 +1058,7 @@ export default function ActivitiesPage() {
                                   </Typography>
                                 </Box>
                                 
-                                <Button
+                                {/* <Button
                                   component={Link}
                                   href={event.link}
                                   color="primary"
@@ -1066,7 +1066,7 @@ export default function ActivitiesPage() {
                                   sx={{ fontWeight: 600 }}
                                 >
                                   Voir les photos
-                                </Button>
+                                </Button> */}
                               </Box>
                             </CardContent>
                           </Card>
@@ -1076,7 +1076,7 @@ export default function ActivitiesPage() {
                 </Grid>
                 
                 {/* CTA pour inscription aux événements */}
-                <Box
+                {/* <Box
                   sx={{
                     mt: 8,
                     p: 4,
@@ -1101,7 +1101,7 @@ export default function ActivitiesPage() {
                   >
                     S'inscrire à la newsletter
                   </Button>
-                </Box>
+                </Box> */}
               </motion.div>
             )}
           </Box>
