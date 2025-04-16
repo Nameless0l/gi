@@ -63,9 +63,9 @@ const navItems = [
     path: '/resources',
     featured: false,
     submenu: [
-      { title: 'Tutoriels', path: '/resources/tutorials' },
-      { title: 'Bibliothèque', path: '/resources/library' },
-      { title: 'Outils', path: '/resources/tools' }
+      { title: 'Tutoriels', path: '/resources#tutorials' },
+      { title: 'Bibliothèque', path: '/resources#library' },
+      // { title: 'Outils', path: '/resources#tools' }
     ]
   },
   {

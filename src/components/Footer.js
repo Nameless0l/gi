@@ -29,13 +29,13 @@ import {
 import Link from 'next/link';
 
 const socialLinks = [
-  { icon: <Facebook />, name: 'Facebook', url: 'https://www.facebook.com/clubgenieinformatique' },
+  { icon: <Facebook />, name: 'Facebook', url: 'https://web.facebook.com/people/Club-G%C3%A9nie-Informatique-ENSPY/61552272308234/#' },
   { icon: <X />, name: 'X (Twitter)', url: 'https://x.com/club_info_enspy' },
   { icon: <Instagram />, name: 'Instagram', url: 'https://www.instagram.com/club_info_enspy' },
   { icon: <LinkedIn />, name: 'LinkedIn', url: 'https://www.linkedin.com/in/club-gi-enspy-1a919b29b' },
   { icon: <GitHub />, name: 'GitHub', url: 'https://github.com/club-genie-informatique-enspy' },
-  { icon: <WhatsApp />, name: 'WhatsApp', url: 'https://chat.whatsapp.com/clubgilink' },
-  { icon: <YouTube />, name: 'YouTube', url: 'https://www.youtube.com/clubgichannel' },
+  { icon: <WhatsApp />, name: 'WhatsApp', url: 'https://chat.whatsapp.com/FsR4zvBn1AVAXDmCM5JbYM' },
+  { icon: <YouTube />, name: 'YouTube', url: 'https://www.youtube.com/@Clubinfoenspy' },
 ];
 
 const mainLinks = [
@@ -49,8 +49,8 @@ const mainLinks = [
 ];
 
 const otherLinks = [
-  { title: 'Projets', path: '/activities/projects' },
-  { title: 'Formations', path: '/activities/trainings' },
+  { title: 'Projets', path: '/activities#projets' },
+  // { title: 'Formations', path: '/activities/trainings' },
   { title: 'Équipe', path: '/about#equipe' },
   { title: 'Partenariats', path: '/partnerships' },
   { title: 'Tutoriels', path: '/resources/tutorials' },
@@ -261,7 +261,7 @@ export default function Footer() {
                       '&:hover': { color: 'primary.main' },
                     }}
                   >
-                    +237 683 86 24 42
+                    +237 676 73 82 48 /+237 683 86 24 42    
                   </MuiLink>
                 </Box>
               </Box>
@@ -286,7 +286,7 @@ export default function Footer() {
             © {currentYear} Club GI ENSPY. Tous droits réservés.
           </Typography>
           
-          <Box sx={{ display: 'flex', gap: 3 }}>
+          {/* <Box sx={{ display: 'flex', gap: 3 }}>
             <Link href="/privacy" passHref>
               <MuiLink
                 underline="none"
@@ -311,7 +311,7 @@ export default function Footer() {
                 Conditions d'utilisation
               </MuiLink>
             </Link>
-          </Box>
+          </Box> */}
           
           <IconButton
             onClick={scrollToTop}
