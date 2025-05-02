@@ -1103,52 +1103,71 @@ export default function HackathonPage() {
             </Typography>
           </Box>
 
-          <Grid container spacing={4} justifyContent="center">
-            {hackathonData.jury.map((member, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
-                <motion.div
-                  custom={index}
-                  variants={itemVariants}
-                >
-                  <Paper
-                    elevation={1}
-                    sx={{
-                      p: 3,
-                      height: '100%',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      textAlign: 'center',
-                      borderRadius: 2,
-                      overflow: 'hidden',
-                      transition: 'transform 0.3s, box-shadow 0.3s',
-                      '&:hover': {
-                        transform: 'translateY(-8px)',
-                        boxShadow: '0 12px 24px rgba(0, 0, 0, 0.1)',
-                      }
-                    }}
-                  >
-                    <Avatar
-                      src={member.image || "/images/placeholder-avatar.jpg"}
-                      alt={member.name}
-                      sx={{
-                        width: 120,
-                        height: 120,
-                        mb: 2,
-                        boxShadow: '0 4px 14px rgba(0, 0, 0, 0.1)',
-                      }}
-                    />
-                    <Typography variant="h6" component="h3" sx={{ fontWeight: 600, mb: 1 }}>
-                      {member.name}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {member.role}
-                    </Typography>
-                  </Paper>
-                </motion.div>
-              </Grid>
-            ))}
-          </Grid>
+          <<Grid container spacing={4} justifyContent="center">
+  {hackathonData.jury.map((member, index) => (
+    <Grid item xs={12} sm={6} md={3} key={index}>
+      <motion.div
+        custom={index}
+        variants={itemVariants}
+      >
+        <Paper
+          elevation={1}
+          sx={{
+            p: 3,
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+            borderRadius: 2,
+            overflow: 'hidden',
+            transition: 'transform 0.3s, box-shadow 0.3s',
+            '&:hover': {
+              transform: 'translateY(-8px)',
+              boxShadow: '0 12px 24px rgba(0, 0, 0, 0.1)',
+            }
+          }}
+        >
+          <Avatar
+            src={member.image || "/images/placeholder-avatar.jpg"}
+            alt={member.name}
+            sx={{
+              width: 120,
+              height: 120,
+              mb: 2,
+              boxShadow: '0 4px 14px rgba(0, 0, 0, 0.1)',
+            }}
+          />
+          <Typography variant="h6" component="h3" sx={{ fontWeight: 600, mb: 1 }}>
+            {member.name}
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+            {member.role}
+          </Typography>
+          <Button 
+            variant="outlined" 
+            size="small" 
+            component="a" 
+            href={member.linked} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            startIcon={<LinkedInIcon />}
+            sx={{ 
+              mt: 'auto',
+              textTransform: 'none',
+              borderRadius: 4,
+              '&:hover': {
+                backgroundColor: 'rgba(0, 119, 181, 0.1)', // Couleur LinkedIn en fond au survol
+              }
+            }}
+          >
+            Voir le profil
+          </Button>
+        </Paper>
+      </motion.div>
+    </Grid>
+  ))}
+</Grid>
         </Container>
       </Box>
 
