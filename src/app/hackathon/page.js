@@ -159,47 +159,56 @@ const CustomIcon = ({ emoji, label }) => (
   
   themes: [
     {
-      title: "IA pour la Santé",
-      icon: <CustomIcon emoji="🏥" label="hospital" />,
-      description: "Développer des solutions basées sur l'IA pour améliorer l'accès aux soins de santé au Cameroun."
-    },
-    {
-      title: "IA pour l'Éducation",
+      title: "Chat offline pour une école",
       icon: <School />,
-      description: "Créer des outils d'apprentissage automatisés pour soutenir l'éducation dans les zones rurales."
+      description: "Développer une solution de messagerie locale sécurisée pour pallier les problèmes de connexion internet dans les établissements scolaires."
     },
     {
-      title: "IA pour l'Agriculture",
-      icon: <CustomIcon emoji="🌱" label="leaf" />,
-      description: "Concevoir des solutions pour optimiser les rendements agricoles et la gestion des ressources."
+      title: "Suivi des processus admin/asso",
+      icon: <CustomIcon emoji="⚙️" label="gear" />,
+      description: "Créer un système centralisé pour optimiser la gestion des ressources et demandes administratives dans les établissements."
     },
     {
-      title: "IA pour l'Environnement",
-      icon: <CustomIcon emoji="🌍" label="earth" />,
-      description: "Développer des applications pour surveiller et préserver l'environnement."
+      title: "Gestion d'organisation",
+      icon: <CustomIcon emoji="👥" label="group" />,
+      description: "Plateforme tout-en-un pour la gestion des associations étudiantes avec suivi des membres, budget et activités."
+    },
+    {
+      title: "E-commerce académique",
+      icon: <CustomIcon emoji="🛒" label="cart" />,
+      description: "Solution de vente en ligne adaptée aux besoins spécifiques des établissements d'enseignement."
+    },
+    {
+      title: "Consultation de notes via WhatsApp",
+      icon: <CustomIcon emoji="📱" label="mobile" />,
+      description: "Système sécurisé d'accès aux résultats académiques via des canaux de communication familiers aux étudiants."
     }
   ],
   
   jury: [
     {
-      name: "Dr. Marie Ngoende",
-      role: "Professeur en IA, Université de Yaoundé I",
-      image: "/images/jury/marie-ngoende.jpg"
+      name: "Pr,Dr,Ing.  Thomas Djotio Ndié",
+      role: "Professeur , ENSPY",
+      image: "https://yowyob.com/_next/image?url=%2Fimages%2Fyowyob%2Fnew%2Fdjotio.png&w=128&q=75",
+      linked:"https://www.linkedin.com/in/thomas-djotio/"
     },
     {
-      name: "Ing. Jean Kamga",
-      role: "Directeur Technique, TechInov Cameroun",
-      image: "/images/jury/jean-kamga.jpg"
+      name: "Ing. POUM Bimbar Paul Ghislain",
+      role: "CEO at Togettech",
+      image: "https://www.f6s.com/content-resource/profiles/2494406_th1.jpg",
+      linked:"https://www.f6s.com/member/paulghislainpoumbimbar/"
     },
     {
-      name: "Mme. Sophie Mboula",
-      role: "Fondatrice, AI4Africa",
-      image: "/images/jury/sophie-mboula.jpg" 
+      name: " Lauraine TIOGNING",
+      role: "Enseignante-chercheuse, ENSPY",
+      image: "https://lh3.googleusercontent.com/8gQ1oUNcN9CNuSPhDqrOE7ttrOhMtU4gwrZSd_pqKIr1m7XxbyhPqfRXHW3wgPwYB0JBMAuD9ied_sPPD8PizskljZvDgJ0vDe7TdRazcVdkMrxzqLJubNZ-e_98DbhQ=w1280", 
+      linked: "https://www.researchgate.net/profile/Lauraine-Tiogning-Djiogue-2" 
     },
     {
-      name: "M. Patrick Ndedi",
+      name: "M. Kouam Destin",
       role: "CTO, CamerTech Solutions",
-      image: "/images/jury/patrick-ndedi.jpg"
+      image: "https://i1.rgstatic.net/ii/profile.image/11431281164075062-1685628291273_Q128/Kouam-Gilchrist-Destin.jpg",
+      linked: "https://www.researchgate.net/profile/Kouam-Gilchrist-Destin"
     }
   ],
   
@@ -1064,7 +1073,7 @@ export default function HackathonPage() {
       </Box> */}
 
       {/* Section Jury */}
-      {/* <Box
+      <Box
         id="jury"
         component={motion.div}
         initial="hidden"
@@ -1089,8 +1098,8 @@ export default function HackathonPage() {
                 color: 'text.secondary'
               }}
             >
-              Présentez votre projet devant un panel d'experts reconnus dans le domaine
-              de l'intelligence artificielle et de l'innovation technologique.
+              Présentez votre projet devant un panel d'experts reconnus dans les domaines
+              de l'innovation technologique.
             </Typography>
           </Box>
 
@@ -1141,7 +1150,7 @@ export default function HackathonPage() {
             ))}
           </Grid>
         </Container>
-      </Box> */}
+      </Box>
 
       {/* Section Prix */}
       <Box
