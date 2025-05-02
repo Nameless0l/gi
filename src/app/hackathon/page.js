@@ -123,24 +123,38 @@ const CustomIcon = ({ emoji, label }) => (
   ],
   
   schedule: [
-    { day: "HackVerse Day", date: "3-4 Mai", events: [
-      { time: "09:00 - 10:00", title: "Enregistrement des participants" },
-      { time: "10:00 - 11:00", title: "Cérémonie d'ouverture" },
-      { time: "11:00 - 12:00", title: "Présentation des défis" },
-      { time: "12:00 - 13:00", title: "Déjeuner et formation des équipes" },
-      { time: "13:00", title: "Lancement officiel du hackathon" },
-      { time: "13:00 - 19:00", title: "Hackathon - Phase 1" },
-      { time: "19:00 - 20:00", title: "Dîner" },
-      { time: "20:00 - 00:00", title: "Hackathon - Phase 2" },
-      { time: "00:00 - 01:00", title: "Collation de minuit" },
-      { time: "01:00 - 08:00", title: "Hackathon - Phase 3 (toute la nuit)" },
-      { time: "08:00 - 09:00", title: "Petit-déjeuner" },
-      { time: "09:00 - 11:00", title: "Finalisation des projets" },
-      { time: "11:00 - 13:00", title: "Présentations des projets" },
-      { time: "13:00 - 14:00", title: "Déjeuner et délibération du jury" },
-      { time: "14:00 - 15:00", title: "Annonce des résultats et remise des prix" },
-      { time: "15:00 - 16:00", title: "Clôture et photo de groupe" }
-    ]}
+    { 
+      "day": "HackVerse Day", 
+      "date": "3-4 Mai", 
+      "events": [
+        { "time": "08:00 - 09:00", "title": "Enregistrement des participants" },
+        { "time": "09:00 - 10:00", "title": "Cérémonie d'ouverture" },
+        { "time": "10:00 - 11:00", "title": "Présentation des défis" },
+        { "time": "11:00 - 12:00", "title": "Déjeuner" },
+        { "time": "12:00 - 13:00", "title": "Préparation finale" },
+        { "time": "13:00", "title": "Lancement officiel du hackathon" },
+        { "time": "13:00", "title": "Masterclass 1: Préparation mentale", "description": "Poser les bases organisationnelles dès le début" },
+        { "time": "13:00 - 15:00", "title": "Hackathon - Phase 1" },
+        { "time": "15:00 - 16:00", "title": "Masterclass 2: Modélisation et accélération", "description": "Orienter le processus de développement avant qu'il ne soit trop avancé" },
+        { "time": "15:00 - 19:00", "title": "Hackathon - Continuation" },
+        { "time": "18:00 - 19:00", "title": "Masterclass 3: Design et Frontend", "description": "Intervenir au moment où les équipes conçoivent leurs interfaces" },
+        { "time": "19:00 - 20:00", "title": "Dîner" },
+        { "time": "20:00 - 00:00", "title": "Hackathon - Phase 2" },
+        { "time": "23:00 - 01:00", "title": "Masterclass 4: Backend et sécurité", "description": "Apporter des solutions quand les défis d'intégration se manifestent" },
+        { "time": "00:00 - 01:00", "title": "Collation de minuit" },
+        { "time": "01:00 - 07:00", "title": "Hackathon - Phase 3 (nuit)" },
+        { "time": "07:00 - 09:00", "title": "Masterclass 5: Présentation et démo", "description": "Préparer la phase finale sans interrompre le développement de dernière minute" },
+        { "time": "07:00 - 08:00", "title": "Petit-déjeuner" },
+        { "time": "08:00 - 13:00", "title": "Finalisation des projets" },
+        { "time": "13:00", "title": "Fin du hackathon" },
+        { "time": "13:00 - 14:00", "title": "Déjeuner" },
+        { "time": "14:00 - 15:00", "title": "Préparation des présentations" },
+        { "time": "15:00 - 17:00", "title": "Présentations des projets" },
+        { "time": "17:00 - 18:00", "title": "Délibération du jury" },
+        { "time": "18:00 - 19:00", "title": "Clôture et photo de groupe" },
+        { "time": "Note", "title": "L'annonce des résultats et la remise des prix auront lieu dans la semaine suivante" }
+      ]
+    }
   ],
   
   themes: [
