@@ -48,7 +48,8 @@ import {
   Category,
   ExpandMore,
   ArrowDownward,
-  KeyboardArrowUp
+  KeyboardArrowUp,
+  LinkedIn
 } from '@mui/icons-material';
 import { motion } from 'framer-motion';
 
@@ -1103,7 +1104,7 @@ export default function HackathonPage() {
             </Typography>
           </Box>
 
-          <<Grid container spacing={4} justifyContent="center">
+          <Grid container spacing={4} justifyContent="center">
   {hackathonData.jury.map((member, index) => (
     <Grid item xs={12} sm={6} md={3} key={index}>
       <motion.div
@@ -1150,8 +1151,7 @@ export default function HackathonPage() {
             component="a" 
             href={member.linked} 
             target="_blank" 
-            rel="noopener noreferrer"
-            startIcon={<LinkedInIcon />}
+            startIcon={<LinkedIn />}
             sx={{ 
               mt: 'auto',
               textTransform: 'none',
