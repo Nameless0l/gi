@@ -207,7 +207,7 @@ const CustomIcon = ({ emoji, label }) => (
     },
     {
       name: "M. Kouam Destin",
-      role: "CTO, CamerTech Solutions",
+      role: "Fonder & Creative Program Manager chez Hakkilo XR",
       image: "https://i1.rgstatic.net/ii/profile.image/11431281164075062-1685628291273_Q128/Kouam-Gilchrist-Destin.jpg",
       linked: "https://www.researchgate.net/profile/Kouam-Gilchrist-Destin"
     }
